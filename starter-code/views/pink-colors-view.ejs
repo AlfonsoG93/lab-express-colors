@@ -1,0 +1,19 @@
+<h2> List of Pink Colors: </h2>
+<ul>
+
+  <% colors.forEach((color) =>{ %>
+    <%if(color.category === 'pink'){%>
+      <li>
+        <p>
+          <b>Color:</b>
+          <%=  color.keyword %>
+            <b>Hex Value:</b>
+            <%=  color.hex %>
+              <div style="background-color: <%=color.hex%>" width: "20px" heighth: "20px">
+                <%=color.keyword%>
+              </div>
+        </p>
+      </li>
+      <%}%>
+        <%  }); %>
+</ul>
